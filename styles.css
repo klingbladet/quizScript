@@ -1,0 +1,19 @@
+/* ===== Bas / variabler för test skull, inget måste===== */
+:root{
+  --bg: #ffffff;
+  --text: #111827;        /* nästan svart */
+  --muted: #6b7280;       /* grå */
+  --primary: #2563eb;     /* blå */
+  --primary-600: #1d4ed8;
+  --accent: #10b981;      /* grön för rätt svar */
+  --danger: #ef4444;      /* röd för fel */
+  --border: #e5e7eb;
+  --card: #ffffff;
+  --radius: 12px;
+  --shadow: 0 6px 20px rgba(0,0,0,.06);
+  --maxw: 920px;
+}
+
+h1{
+    color: var(--primary);
+}

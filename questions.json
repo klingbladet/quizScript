@@ -1,0 +1,1352 @@
+[
+  {
+    "question": "Vilket HTML-element används för största rubriken?",
+    "answers": [
+      "<h1>",
+      "<h6>",
+      "<p>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket element används för att skapa en länk?",
+    "answers": [
+      "<a>",
+      "<link>",
+      "<href>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket element används för en punktlista?",
+    "answers": [
+      "<ul>",
+      "<ol>",
+      "<li>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken tagg används för en radbrytning?",
+    "answers": [
+      "<break>",
+      "<br>",
+      "<hr>"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken HTML-tagg används för att visa en bild?",
+    "answers": [
+      "<img>",
+      "<src>",
+      "<picture>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken attribut anger bildens källa?",
+    "answers": [
+      "href",
+      "src",
+      "alt"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vad betyder HTML?",
+    "answers": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "Home Tool Markup Language"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken tagg används för att skapa en tabell?",
+    "answers": [
+      "<table>",
+      "<tab>",
+      "<grid>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken HTML-attribut används för att ge ett element ett unikt namn?",
+    "answers": [
+      "id",
+      "class",
+      "name"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken attribut används för att ange en webbadress till en länk?",
+    "answers": [
+      "src",
+      "href",
+      "link"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap ändrar textens färg?",
+    "answers": [
+      "color",
+      "background-color",
+      "text-color"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap ändrar bakgrundsfärg?",
+    "answers": [
+      "color",
+      "background-color",
+      "bgcolor"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap används för textstorlek?",
+    "answers": [
+      "font-size",
+      "text-size",
+      "font"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skrivs en CSS-kommentar?",
+    "answers": [
+      "/* kommentar */",
+      "// kommentar",
+      "# kommentar"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap används för att centrera text?",
+    "answers": [
+      "align",
+      "text-align",
+      "center"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilket tecken används för att markera en klass i CSS?",
+    "answers": [
+      ".",
+      "#",
+      "%"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket tecken används för id i CSS?",
+    "answers": [
+      ".",
+      "#",
+      "@"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap ändrar teckensnitt?",
+    "answers": [
+      "font-family",
+      "font-name",
+      "font-type"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken enhet används ofta för marginaler?",
+    "answers": [
+      "px",
+      "pt",
+      "hr"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap används för att göra text fet?",
+    "answers": [
+      "font-weight",
+      "font-bold",
+      "bold"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur deklarerar man en variabel?",
+    "answers": [
+      "var",
+      "let",
+      "const"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken metod visar text i konsolen?",
+    "answers": [
+      "console.log()",
+      "print()",
+      "echo()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken symbol används för att kommentera en rad?",
+    "answers": [
+      "//",
+      "/* */",
+      "#"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vad returnerar typeof 5?",
+    "answers": [
+      "number",
+      "string",
+      "integer"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skapar man en funktion?",
+    "answers": [
+      "function minFunktion() {}",
+      "def minFunktion()",
+      "create function()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken operator används för lika med?",
+    "answers": [
+      "=",
+      "==",
+      "==="
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Vilken operator används för addition?",
+    "answers": [
+      "+",
+      "-",
+      "*"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vad gör alert()?",
+    "answers": [
+      "Visar ett meddelande",
+      "Loggar i konsolen",
+      "Skapar en variabel"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skapar man en array?",
+    "answers": [
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur får man längden av en array?",
+    "answers": [
+      "array.length",
+      "len(array)",
+      "size(array)"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket HTML-element används för största rubriken?",
+    "answers": [
+      "<h1>",
+      "<h6>",
+      "<p>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket element används för att skapa en länk?",
+    "answers": [
+      "<a>",
+      "<link>",
+      "<href>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket element används för en punktlista?",
+    "answers": [
+      "<ul>",
+      "<ol>",
+      "<li>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken tagg används för en radbrytning?",
+    "answers": [
+      "<break>",
+      "<br>",
+      "<hr>"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken HTML-tagg används för att visa en bild?",
+    "answers": [
+      "<img>",
+      "<src>",
+      "<picture>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken attribut anger bildens källa?",
+    "answers": [
+      "href",
+      "src",
+      "alt"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vad betyder HTML?",
+    "answers": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "Home Tool Markup Language"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken tagg används för att skapa en tabell?",
+    "answers": [
+      "<table>",
+      "<tab>",
+      "<grid>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken HTML-attribut används för att ge ett element ett unikt namn?",
+    "answers": [
+      "id",
+      "class",
+      "name"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken attribut används för att ange en webbadress till en länk?",
+    "answers": [
+      "src",
+      "href",
+      "link"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap ändrar textens färg?",
+    "answers": [
+      "color",
+      "background-color",
+      "text-color"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap ändrar bakgrundsfärg?",
+    "answers": [
+      "color",
+      "background-color",
+      "bgcolor"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap används för textstorlek?",
+    "answers": [
+      "font-size",
+      "text-size",
+      "font"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skrivs en CSS-kommentar?",
+    "answers": [
+      "/* kommentar */",
+      "// kommentar",
+      "# kommentar"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap används för att centrera text?",
+    "answers": [
+      "align",
+      "text-align",
+      "center"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilket tecken används för att markera en klass i CSS?",
+    "answers": [
+      ".",
+      "#",
+      "%"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket tecken används för id i CSS?",
+    "answers": [
+      ".",
+      "#",
+      "@"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap ändrar teckensnitt?",
+    "answers": [
+      "font-family",
+      "font-name",
+      "font-type"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken enhet används ofta för marginaler?",
+    "answers": [
+      "px",
+      "pt",
+      "hr"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap används för att göra text fet?",
+    "answers": [
+      "font-weight",
+      "font-bold",
+      "bold"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur deklarerar man en variabel?",
+    "answers": [
+      "var",
+      "let",
+      "const"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken metod visar text i konsolen?",
+    "answers": [
+      "console.log()",
+      "print()",
+      "echo()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken symbol används för att kommentera en rad?",
+    "answers": [
+      "//",
+      "/* */",
+      "#"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vad returnerar typeof 5?",
+    "answers": [
+      "number",
+      "string",
+      "integer"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skapar man en funktion?",
+    "answers": [
+      "function minFunktion() {}",
+      "def minFunktion()",
+      "create function()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken operator används för lika med?",
+    "answers": [
+      "=",
+      "==",
+      "==="
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Vilken operator används för addition?",
+    "answers": [
+      "+",
+      "-",
+      "*"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vad gör alert()?",
+    "answers": [
+      "Visar ett meddelande",
+      "Loggar i konsolen",
+      "Skapar en variabel"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skapar man en array?",
+    "answers": [
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur får man längden av en array?",
+    "answers": [
+      "array.length",
+      "len(array)",
+      "size(array)"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket HTML-element används för största rubriken?",
+    "answers": [
+      "<h1>",
+      "<h6>",
+      "<p>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket element används för att skapa en länk?",
+    "answers": [
+      "<a>",
+      "<link>",
+      "<href>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket element används för en punktlista?",
+    "answers": [
+      "<ul>",
+      "<ol>",
+      "<li>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken tagg används för en radbrytning?",
+    "answers": [
+      "<break>",
+      "<br>",
+      "<hr>"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken HTML-tagg används för att visa en bild?",
+    "answers": [
+      "<img>",
+      "<src>",
+      "<picture>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken attribut anger bildens källa?",
+    "answers": [
+      "href",
+      "src",
+      "alt"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vad betyder HTML?",
+    "answers": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "Home Tool Markup Language"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken tagg används för att skapa en tabell?",
+    "answers": [
+      "<table>",
+      "<tab>",
+      "<grid>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken HTML-attribut används för att ge ett element ett unikt namn?",
+    "answers": [
+      "id",
+      "class",
+      "name"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken attribut används för att ange en webbadress till en länk?",
+    "answers": [
+      "src",
+      "href",
+      "link"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap ändrar textens färg?",
+    "answers": [
+      "color",
+      "background-color",
+      "text-color"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap ändrar bakgrundsfärg?",
+    "answers": [
+      "color",
+      "background-color",
+      "bgcolor"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap används för textstorlek?",
+    "answers": [
+      "font-size",
+      "text-size",
+      "font"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skrivs en CSS-kommentar?",
+    "answers": [
+      "/* kommentar */",
+      "// kommentar",
+      "# kommentar"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap används för att centrera text?",
+    "answers": [
+      "align",
+      "text-align",
+      "center"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilket tecken används för att markera en klass i CSS?",
+    "answers": [
+      ".",
+      "#",
+      "%"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket tecken används för id i CSS?",
+    "answers": [
+      ".",
+      "#",
+      "@"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap ändrar teckensnitt?",
+    "answers": [
+      "font-family",
+      "font-name",
+      "font-type"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken enhet används ofta för marginaler?",
+    "answers": [
+      "px",
+      "pt",
+      "hr"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap används för att göra text fet?",
+    "answers": [
+      "font-weight",
+      "font-bold",
+      "bold"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur deklarerar man en variabel?",
+    "answers": [
+      "var",
+      "let",
+      "const"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken metod visar text i konsolen?",
+    "answers": [
+      "console.log()",
+      "print()",
+      "echo()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken symbol används för att kommentera en rad?",
+    "answers": [
+      "//",
+      "/* */",
+      "#"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vad returnerar typeof 5?",
+    "answers": [
+      "number",
+      "string",
+      "integer"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skapar man en funktion?",
+    "answers": [
+      "function minFunktion() {}",
+      "def minFunktion()",
+      "create function()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken operator används för lika med?",
+    "answers": [
+      "=",
+      "==",
+      "==="
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Vilken operator används för addition?",
+    "answers": [
+      "+",
+      "-",
+      "*"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vad gör alert()?",
+    "answers": [
+      "Visar ett meddelande",
+      "Loggar i konsolen",
+      "Skapar en variabel"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skapar man en array?",
+    "answers": [
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur får man längden av en array?",
+    "answers": [
+      "array.length",
+      "len(array)",
+      "size(array)"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket HTML-element används för största rubriken?",
+    "answers": [
+      "<h1>",
+      "<h6>",
+      "<p>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket element används för att skapa en länk?",
+    "answers": [
+      "<a>",
+      "<link>",
+      "<href>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket element används för en punktlista?",
+    "answers": [
+      "<ul>",
+      "<ol>",
+      "<li>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken tagg används för en radbrytning?",
+    "answers": [
+      "<break>",
+      "<br>",
+      "<hr>"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken HTML-tagg används för att visa en bild?",
+    "answers": [
+      "<img>",
+      "<src>",
+      "<picture>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken attribut anger bildens källa?",
+    "answers": [
+      "href",
+      "src",
+      "alt"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vad betyder HTML?",
+    "answers": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "Home Tool Markup Language"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken tagg används för att skapa en tabell?",
+    "answers": [
+      "<table>",
+      "<tab>",
+      "<grid>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken HTML-attribut används för att ge ett element ett unikt namn?",
+    "answers": [
+      "id",
+      "class",
+      "name"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken attribut används för att ange en webbadress till en länk?",
+    "answers": [
+      "src",
+      "href",
+      "link"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap ändrar textens färg?",
+    "answers": [
+      "color",
+      "background-color",
+      "text-color"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap ändrar bakgrundsfärg?",
+    "answers": [
+      "color",
+      "background-color",
+      "bgcolor"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap används för textstorlek?",
+    "answers": [
+      "font-size",
+      "text-size",
+      "font"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skrivs en CSS-kommentar?",
+    "answers": [
+      "/* kommentar */",
+      "// kommentar",
+      "# kommentar"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap används för att centrera text?",
+    "answers": [
+      "align",
+      "text-align",
+      "center"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilket tecken används för att markera en klass i CSS?",
+    "answers": [
+      ".",
+      "#",
+      "%"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket tecken används för id i CSS?",
+    "answers": [
+      ".",
+      "#",
+      "@"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap ändrar teckensnitt?",
+    "answers": [
+      "font-family",
+      "font-name",
+      "font-type"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken enhet används ofta för marginaler?",
+    "answers": [
+      "px",
+      "pt",
+      "hr"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap används för att göra text fet?",
+    "answers": [
+      "font-weight",
+      "font-bold",
+      "bold"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur deklarerar man en variabel?",
+    "answers": [
+      "var",
+      "let",
+      "const"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken metod visar text i konsolen?",
+    "answers": [
+      "console.log()",
+      "print()",
+      "echo()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken symbol används för att kommentera en rad?",
+    "answers": [
+      "//",
+      "/* */",
+      "#"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vad returnerar typeof 5?",
+    "answers": [
+      "number",
+      "string",
+      "integer"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skapar man en funktion?",
+    "answers": [
+      "function minFunktion() {}",
+      "def minFunktion()",
+      "create function()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken operator används för lika med?",
+    "answers": [
+      "=",
+      "==",
+      "==="
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Vilken operator används för addition?",
+    "answers": [
+      "+",
+      "-",
+      "*"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vad gör alert()?",
+    "answers": [
+      "Visar ett meddelande",
+      "Loggar i konsolen",
+      "Skapar en variabel"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skapar man en array?",
+    "answers": [
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur får man längden av en array?",
+    "answers": [
+      "array.length",
+      "len(array)",
+      "size(array)"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket HTML-element används för största rubriken?",
+    "answers": [
+      "<h1>",
+      "<h6>",
+      "<p>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket element används för att skapa en länk?",
+    "answers": [
+      "<a>",
+      "<link>",
+      "<href>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket element används för en punktlista?",
+    "answers": [
+      "<ul>",
+      "<ol>",
+      "<li>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken tagg används för en radbrytning?",
+    "answers": [
+      "<break>",
+      "<br>",
+      "<hr>"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken HTML-tagg används för att visa en bild?",
+    "answers": [
+      "<img>",
+      "<src>",
+      "<picture>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken attribut anger bildens källa?",
+    "answers": [
+      "href",
+      "src",
+      "alt"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vad betyder HTML?",
+    "answers": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "Home Tool Markup Language"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken tagg används för att skapa en tabell?",
+    "answers": [
+      "<table>",
+      "<tab>",
+      "<grid>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken HTML-attribut används för att ge ett element ett unikt namn?",
+    "answers": [
+      "id",
+      "class",
+      "name"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken attribut används för att ange en webbadress till en länk?",
+    "answers": [
+      "src",
+      "href",
+      "link"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap ändrar textens färg?",
+    "answers": [
+      "color",
+      "background-color",
+      "text-color"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap ändrar bakgrundsfärg?",
+    "answers": [
+      "color",
+      "background-color",
+      "bgcolor"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap används för textstorlek?",
+    "answers": [
+      "font-size",
+      "text-size",
+      "font"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skrivs en CSS-kommentar?",
+    "answers": [
+      "/* kommentar */",
+      "// kommentar",
+      "# kommentar"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap används för att centrera text?",
+    "answers": [
+      "align",
+      "text-align",
+      "center"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilket tecken används för att markera en klass i CSS?",
+    "answers": [
+      ".",
+      "#",
+      "%"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilket tecken används för id i CSS?",
+    "answers": [
+      ".",
+      "#",
+      "@"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken egenskap ändrar teckensnitt?",
+    "answers": [
+      "font-family",
+      "font-name",
+      "font-type"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken enhet används ofta för marginaler?",
+    "answers": [
+      "px",
+      "pt",
+      "hr"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken egenskap används för att göra text fet?",
+    "answers": [
+      "font-weight",
+      "font-bold",
+      "bold"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur deklarerar man en variabel?",
+    "answers": [
+      "var",
+      "let",
+      "const"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Vilken metod visar text i konsolen?",
+    "answers": [
+      "console.log()",
+      "print()",
+      "echo()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken symbol används för att kommentera en rad?",
+    "answers": [
+      "//",
+      "/* */",
+      "#"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vad returnerar typeof 5?",
+    "answers": [
+      "number",
+      "string",
+      "integer"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skapar man en funktion?",
+    "answers": [
+      "function minFunktion() {}",
+      "def minFunktion()",
+      "create function()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vilken operator används för lika med?",
+    "answers": [
+      "=",
+      "==",
+      "==="
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Vilken operator används för addition?",
+    "answers": [
+      "+",
+      "-",
+      "*"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Vad gör alert()?",
+    "answers": [
+      "Visar ett meddelande",
+      "Loggar i konsolen",
+      "Skapar en variabel"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur skapar man en array?",
+    "answers": [
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Hur får man längden av en array?",
+    "answers": [
+      "array.length",
+      "len(array)",
+      "size(array)"
+    ],
+    "correct": 0
+  }
+]

@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIZZ - BY TEAM 4</title>
     <link rel="stylesheet" href="styles.css" defer>
-    <script src="script.js"></script>
+    
 </head>
 <body>
-    <h1 class="test"> Hello Team 4</h1>
+    <header class="quiz-header">
+        <h1>Webbutveckling Quiz</h1>
+        <div class="timer-container">
+        Tid kvar: <span id="timer">10:00</span>
+        </div>
+    </header>
+
+    <main class="quiz-container">
+        <div id="quiz">
+            här är quizzen
+        </div>
+        <button id="next-btn" class="btn">Nästa fråga</button>
+    </main>
+
+    <section class="result-container hidden" id="result-container">
+        <h2>Ditt resultat</h2>
+        <p id="score"></p>
+        <button id="restart-btn" class="btn">Kör igen</button>
+    </section>
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>

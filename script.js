@@ -1,6 +1,8 @@
 
 const ul = document.getElementById("questions")
 let questions = null;
+let userAnswers = [];
+
 
 const QUESTION_LIMIT = 20;
 
@@ -36,27 +38,52 @@ function shuffle(arr) {
 }
 
 async function renderHTML(questions) {
+  console.log(questions)
 
-  console.log(questions);
+  const questionContainer = document.getElementById("question-container");
+  const question = document.getElementById("question");
+  const answerOne = document.getElementById("answer-one");
+  const answerTwo = document.getElementById("answer-two");
+  const answerThree = document.getElementById("answer-three");
+  const answerFour = document.getElementById("answer-four");
+
+  for (let i = 0; i < questions.length; i++) {
+    const q = questions[i];
+    question.innerText = q.question;
+    answerOne.innerText = q.answers[0];
+    answerTwo.innerText = q.answers[1];
+    answerThree.innerText = q.answers[2];
+    answerFour.innerText = q.answers[3] || "4";
+
+    // Vänta på att användaren klickar på ett svar innan nästa fråga visas
+    const userAnswer = await waitForAnswer([answerOne, answerTwo, answerThree, answerFour]);
+
+    console.log("Du valde:", userAnswer);
+    // Här kan du t.ex. kolla om svaret var rätt innan nästa fråga laddas
+    if(userAnswer === q.answers[q.correct]) {
+      console.log("Korrekt!");
+    } else 
+      console.log("Fel!");
+  }
   
-  questions.forEach((question) => {
-    const li = document.createElement("li")
-    const questionHeading = document.createElement("h2");
-    const answerList = document.createElement("ul");
+  question.innerText = "Klart! 🎉";
+  answerOne.innerText = "";
+  answerTwo.innerText = "";
+  answerThree.innerText = "";
+  answerFour.innerText = "";
+}
 
-    questionHeading.textContent = question.question;
-
-    question.answers.forEach((value) => {
-      console.log(value)
-      const answerItem = document.createElement("li");
-      answerItem.textContent = value;
-      answerList.appendChild(answerItem);
+// Hjälpfunktion som väntar tills ett av svaren klickas
+function waitForAnswer(answerElements) {
+  return new Promise((resolve) => {
+    answerElements.forEach((btn) => {
+      const handleClick = () => {
+        // ta bort event listeners så det inte klickas flera gånger
+        answerElements.forEach((b) => b.removeEventListener("click", handleClick));
+        resolve(btn.innerText);
+      };
+      btn.addEventListener("click", handleClick);
     });
-
-    li.appendChild(questionHeading);
-    li.appendChild(answerList);
-    ul.appendChild(li);
-    
   });
 }
 

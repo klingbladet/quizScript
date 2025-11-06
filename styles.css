@@ -1,23 +1,85 @@
 /* ===== Bas / variabler för test skull, inget måste===== */
-:root{
+:root {
   --bg: #ffffff;
-  --text: #111827;        /* nästan svart */
-  --muted: #6b7280;       /* grå */
-  --primary: #2563eb;     /* blå */
+  --text: #111827; /* nästan svart */
+  --muted: #6b7280; /* grå */
+  --primary: #2563eb; /* blå */
   --primary-600: #1d4ed8;
-  --accent: #10b981;      /* grön för rätt svar */
-  --danger: #ef4444;      /* röd för fel */
+  --accent: #10b981; /* grön för rätt svar */
+  --danger: #ef4444; /* röd för fel */
   --border: #e5e7eb;
   --card: #ffffff;
   --radius: 12px;
-  --shadow: 0 6px 20px rgba(0,0,0,.06);
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   --maxw: 920px;
+  --darkgray: #1f2937;
 }
 
-h1{
-    color: var(--primary);
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--darkgray);
+  height: 100vh;
 }
 
-#countdown{
+#countdown-display,
+#start-button {
+  grid-column: 1 / span 2;
+  justify-self: center; /* aby wyśrodkować w poziomie */
+}
+
+#countdown-display {
+  margin-bottom: ;
+}
+
+#question-container {
+  border: solid 1px gray;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 450px;
+  margin-top: ;
+}
+
+#question {
+  font-size: 26px;
+  padding: 40px;
+  color: white;
+}
+
+h1 {
+  color: var(--primary);
+}
+
+#countdown {
   color: blue;
+}
+
+#question-container {
+  max-width: 700px;
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+#question {
+  grid-column: 1 / span 2;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+#answer-one,
+#answer-two,
+#answer-three,
+#answer-four {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }

@@ -5,7 +5,7 @@ let userAnswers = [];
 
 const showstart = document.getElementById("start-button");
 showstart.classList.add("show-start");
-//test
+
 // statisk timer–variabel (för framtida användning)
 // let timeLeft = 600; // 2 minuter t.ex.
 
@@ -42,6 +42,8 @@ function updateCountdown() {
     startButton.textContent = "Börja om";
     countdownTime = TOTAL_TIME_SECONDS; //Återställer till 10 min.
     timeoutElement.style.display = "flex"; //Visar text stringen när timern tagit slut.
+    const questioncontainer = document.getElementById("question-container");
+    questioncontainer.classList.add("hidden");
   }
 }
 

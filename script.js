@@ -11,6 +11,7 @@ showstart.classList.add("show-start");
 
 const countdownDisplay = document.getElementById("countdown-display");
 const startButton = document.getElementById("start-button");
+const timeoutElement = document.querySelector(".timeout");
 
 const TOTAL_TIME_SECONDS = 2; // totala tid
 
@@ -37,10 +38,10 @@ function updateCountdown() {
 
   if (countdownTime <= 0) {
     clearInterval(countdownInterval); //Stoppar och rensar intervallet, tillåter att den kan börjar om igen.
-    countdownDisplay.textContent = "Tiden är ute! Vill du börja om?"; //Visar text stringen när timern tagit slut.
     startButton.style.display = ""; //Återaktiverar knappen så att timern kan räkna ner igen.
     startButton.textContent = "Börja om";
     countdownTime = TOTAL_TIME_SECONDS; //Återställer till 10 min.
+    timeoutElement.style.display = "flex"; //Visar text stringen när timern tagit slut.
   }
 }
 
@@ -50,6 +51,7 @@ function startCountdown() {
   startButton.style.display = "none"; //Gömmer start knappen
   countdownDisplay.textContent = formatTime(countdownTime); //Kallar på formatTime funktionen och visar nedräkningen per sekund i div texten.
   countdownInterval = setInterval(updateCountdown, 1000); //1000 behövs för att det faktist ska gå en sekund mellan varje ändring.
+  timeoutElement.style.display = "none"; //Tar bort text stringen när timern börjar om.
 }
 
 function startshow() {

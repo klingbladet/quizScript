@@ -19,6 +19,13 @@ body {
   font-weight: 700;
 }
 
+.timeout {
+  display: none;
+  color: var(--orange);
+  margin-bottom: 2rem;
+  font-size: 24px;
+}
+
 .hidden {
   display: none !important;
 }
@@ -152,4 +159,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.show-start { 
 }

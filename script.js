@@ -5,11 +5,15 @@ console.log("Script loaded successfully.");
 let questions = [];
 let userAnswers = [];
 
+const showstart = document.getElementById("start-button");
+showstart.classList.add("show-start");
+
 // statisk timer–variabel (för framtida användning)
 // let timeLeft = 600; // 2 minuter t.ex.
 
 const countdownDisplay = document.getElementById("countdown-display");
 const startButton = document.getElementById("start-button");
+const timeoutElement = document.querySelector(".timeout");
 
 const TOTAL_TIME_SECONDS = 600; // totala tid
 
@@ -36,10 +40,12 @@ function updateCountdown() {
 
   if (countdownTime <= 0) {
     clearInterval(countdownInterval); //Stoppar och rensar intervallet, tillåter att den kan börjar om igen.
-    countdownDisplay.textContent = "Tiden är ute! Vill du börja om?"; //Visar text stringen när timern tagit slut.
-    startButton.style.display = ""; //Återaktiverar knappen så att timern kan räkna ner igen.
+    startButton.style.display = "flex"; //Återaktiverar knappen så att timern kan räkna ner igen.
     startButton.textContent = "Börja om";
     countdownTime = TOTAL_TIME_SECONDS; //Återställer till 10 min.
+    timeoutElement.style.display = "flex"; //Visar text stringen när timern tagit slut.
+    const questioncontainer = document.getElementById("question-container");
+    questioncontainer.classList.add("hidden");
   }
 }
 
@@ -49,9 +55,16 @@ function startCountdown() {
   startButton.style.display = "none"; //Gömmer start knappen
   countdownDisplay.textContent = formatTime(countdownTime); //Kallar på formatTime funktionen och visar nedräkningen per sekund i div texten.
   countdownInterval = setInterval(updateCountdown, 1000); //1000 behövs för att det faktist ska gå en sekund mellan varje ändring.
+  timeoutElement.style.display = "none"; //Tar bort text stringen när timern börjar om.
+}
+
+function startshow() {
+  const startshow = document.getElementById("question-container");
+  startshow.classList.remove("hidden");
 }
 
 startButton.addEventListener("click", startCountdown);
+startButton.addEventListener("click", startshow);
 
 async function getQuizQuestions() {
   try {
@@ -141,6 +154,10 @@ async function endQuiz(timeOut = false) {
   const questionContainer = document.getElementById("question-container");
   questionContainer.classList.add("hidden");
   resultContainer.classList.remove("hidden");
+  startButton.style.display = "flex";
+  startButton.textContent = "Börja om";
+
+  
 
   console.log(countdownTime);
   const timeUsed = `${Math.floor((TOTAL_TIME_SECONDS - countdownTime) / 60)} min ${(TOTAL_TIME_SECONDS - countdownTime) % 60} sek`;

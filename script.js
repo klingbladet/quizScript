@@ -3,13 +3,16 @@ console.log("Script loaded successfully.");
 let questions = [];
 let userAnswers = [];
 
+const showstart = document.getElementById("start-button");
+showstart.classList.add("show-start");
+
 // statisk timer–variabel (för framtida användning)
 // let timeLeft = 600; // 2 minuter t.ex.
 
 const countdownDisplay = document.getElementById("countdown-display");
 const startButton = document.getElementById("start-button");
 
-const TOTAL_TIME_SECONDS = 1; // totala tid
+const TOTAL_TIME_SECONDS = 2; // totala tid
 
 let countdownTime = TOTAL_TIME_SECONDS; //nuvarande tid
 let countdownInterval; //kontroll nyckel, stoppar timern och gör så att man kan börja om
@@ -49,7 +52,13 @@ function startCountdown() {
   countdownInterval = setInterval(updateCountdown, 1000); //1000 behövs för att det faktist ska gå en sekund mellan varje ändring.
 }
 
+function startshow() {
+  const startshow = document.getElementById("question-container");
+  startshow.classList.remove("hidden");
+}
+
 startButton.addEventListener("click", startCountdown);
+startButton.addEventListener("click", startshow);
 
 async function getQuizQuestions() {
   try {
@@ -139,6 +148,8 @@ function endQuiz(timeOut = false) {
   const questionContainer = document.getElementById("question-container");
   questionContainer.classList.add("hidden");
   resultContainer.classList.remove("hidden");
+
+  
 
   console.log(countdownTime);
   const timeUsed = `${Math.floor((TOTAL_TIME_SECONDS - countdownTime) / 60)} min ${(TOTAL_TIME_SECONDS - countdownTime) % 60} sek`;

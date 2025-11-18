@@ -67,10 +67,7 @@ body {
   transition: all 0.1s ease;
 }
 
-#answer-one:hover,
-#answer-two:hover,
-#answer-three:hover,
-#answer-four:hover {
+.answers:hover {
   background-color: var(--hover-bg);
   transform: scale(1.1);
   color: var(--orange);
@@ -143,9 +140,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;             /* avstånd mellan knapparna */
+  gap: 12px; /* avstånd mellan knapparna */
   margin-bottom: 40px;
-  flex-wrap: wrap;       /* gör att de hoppar ner på mobil */
+  flex-wrap: wrap; /* gör att de hoppar ner på mobil */
 }
 
 /* Gör knapparna lika stora och snyggt matchade */
@@ -222,15 +219,15 @@ body {
 }
 
 #leaderboard-list .firstRanked {
-  background: linear-gradient(90deg, gold, rgba(255,215,0,0.1));
+  background: linear-gradient(90deg, gold, rgba(255, 215, 0, 0.1));
 }
 
 #leaderboard-list .secondRanked {
-  background: linear-gradient(90deg, silver, rgba(192,192,192,0.1));
+  background: linear-gradient(90deg, silver, rgba(192, 192, 192, 0.1));
 }
 
 #leaderboard-list .thirdRanked {
-  background: linear-gradient(90deg, #cd7f32, rgba(205,127,50,0.1)); /* brons */
+  background: linear-gradient(90deg, #cd7f32, rgba(205, 127, 50, 0.1)); /* brons */
 }
 
 #leaderboard-list .user {
@@ -243,7 +240,6 @@ body {
   text-align: right;
   font-weight: 600;
 }
-
 
 /* Responsivitet */
 @media (max-width: 600px) {
@@ -282,12 +278,12 @@ body {
   color: var(--orange);
 }
 
-.correct{
+.correct {
   background-color: green;
   color: white;
 }
 
-.wrong{
+.wrong {
   background-color: red;
   color: white;
 }

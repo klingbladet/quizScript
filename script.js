@@ -134,27 +134,30 @@ async function renderHTML(questionsData) {
     const userAnswer = await waitForAnswer([answerOne, answerTwo, answerThree, answerFour]);
     userAnswers.push(userAnswer); // lagrar svar
 
-
     // if-sats ska bort eftråt då den endast visar i konsolen om svaret var rätt eller fel.
 
-    const chosenElement = [answerOne,answerTwo,answerThree,answerFour].find(a=>a.innerText === userAnswer)
-    const correctElement = [answerOne,answerTwo,answerThree,answerFour][q.correct];
+    const chosenElement = [answerOne, answerTwo, answerThree, answerFour].find((a) => a.innerText === userAnswer);
+    const correctElement = [answerOne, answerTwo, answerThree, answerFour][q.correct];
 
     if (userAnswer === q.answers[q.correct]) {
+      chosenElement.classList.remove("answers");
       chosenElement.classList.add("correct");
       console.log("Korrekt!");
     } else {
-      // tab ort hover 
+      // tab ort hover
+      chosenElement.classList.remove("answers");
+      correctElement.classList.remove("answers");
       chosenElement.classList.add("wrong");
       correctElement.classList.add("correct");
       console.log("Fel!");
     }
 
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    chosenElement.classList.remove("correct","wrong");
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    chosenElement.classList.remove("correct", "wrong");
     correctElement.classList.remove("correct");
     // lägg tbk hover
-
+    chosenElement.classList.add("answers");
+    correctElement.classList.add("answers");
   }
 
   endQuiz(); // Kör när alla frågor är besvarade
@@ -201,7 +204,7 @@ async function endQuiz(timeOut = false) {
     <strong>Tid använd:</strong> ${timeUsed}<br>
     <strong>Tid kvar:</strong> ${Math.floor(timeRemaining / 60)} min ${timeRemaining % 60} sek
   `;
-  
+
   // spara via modul i localStorage + Firebase
   await saveResultToLocal(correctCount, questions, timeUsed, timeRemaining, userName);
 }
@@ -237,7 +240,6 @@ function restartQuiz() {
 }
 
 document.getElementById("restart-button").addEventListener("click", restartQuiz);
-
 
 // Hämta topp 10 från localStorage och visa
 async function showLeaderboard() {
@@ -292,7 +294,6 @@ async function showLeaderboard() {
   document.getElementById("question-container").classList.add("hidden");
   document.getElementById("result-container").classList.add("hidden");
 }
-
 
 // Göm leaderboard
 document.getElementById("close-leaderboard").addEventListener("click", () => {

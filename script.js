@@ -155,6 +155,7 @@ async function renderHTML(questionsData) {
     await new Promise((resolve) => setTimeout(resolve, 2000));
     chosenElement.classList.remove("correct", "wrong");
     correctElement.classList.remove("correct");
+    chosenElement.offsetWidth;
     // lägg tbk hover
     chosenElement.classList.add("answers");
     correctElement.classList.add("answers");

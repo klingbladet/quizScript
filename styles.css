@@ -281,9 +281,41 @@ body {
 .correct {
   background-color: green;
   color: white;
+  animation: correctBlink 0.6s ease-in-out 2;
+}
+
+@keyframes correctBlink {
+  0% { background-color: green; }
+  15% { background-color: #32cd32; } 
+  30% { background-color: green; }
+  45% { background-color: #32cd32; } 
+  60% { background-color: green; }
+  75% { background-color: #32cd32; } 
+  100% { background-color: green; }
 }
 
 .wrong {
   background-color: red;
   color: white;
+  animation: wrongShake 0.6s ease-in-out, wrongBlink 0.4s ease-in-out;
+  -webkit-animation: wrongShake 0.6s ease-in-out, wrongBlink 0.4s ease-in-out;
 }
+
+@keyframes wrongBlink {
+  0% { background-color: red; }
+  15% { background-color: #ff4d4d; } 
+  30% { background-color: red; }
+  45% { background-color: red; }
+  60% { background-color: #ff4d4d; } 
+  75% { background-color: red; }
+  100% { background-color: red; }
+}
+
+@keyframes wrongShake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+

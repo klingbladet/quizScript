@@ -6,6 +6,24 @@
   --orange: #fb923c;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;  /* makes sure it sits ABOVE the canvas */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -17,13 +35,19 @@ body {
   height: 100vh;
   font-weight: 700;
   font-family: "Source Code Pro", monospace;
+  background: black;
 
+}
+
+canvas {
+  display: block;
 }
 
 h1 {
   color: white;
   font-size: 80px;
   font-family: "Source Code Pro", monospace;
+  margin-bottom: 80px;
 }
 
 .user-name {
@@ -175,24 +199,39 @@ h1 {
 /* Gör knapparna lika stora och snyggt matchade */
 .show-start,
 .leaderboard-btn {
-  font-size: 15px;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 6px;
-  background-color: var(--hover-bg);
-  color: var(--text-white);
-  cursor: pointer;
-  transition: all 0.1s ease;
-  font-weight: 700;
+  position: relative;
+  padding: 12px 30px;
+  font-size: 20px;
   font-family: "Source Code Pro", monospace;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s, border-color 0.3s;
 }
 
-.show-start:hover,
-.leaderboard-btn:hover {
-  transform: scale(1.1);
-  background-color: var(--hover-bg);
-  color: var(--orange);
+.show-start::before, .leaderboard-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 166, 0, 0.3), transparent);
+  transition: all 0.3s ease;
 }
+
+.show-start:hover::before, .leaderboard-btn:hover::before {
+  left: 0;
+}
+
+.show-start:hover, .leaderboard-btn:hover {
+  color: rgb(255, 255, 255);
+  border-color: #fb923c;
+}
+
 
 /* ==== Leaderboard-styling ==== */
 #leaderboard-container {

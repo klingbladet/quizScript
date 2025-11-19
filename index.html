@@ -11,42 +11,48 @@
     <script type="module" src="./script.js" defer></script>
   </head>
   <body>
-    <div class="timeout">Tiden är ute! Vill du börja om?</div>
-    <h1>
-      &lt;quizScript&gt;</h1>
-      <input class="user-name" id="username" type="text" placeholder="const namn">
-    <div class="button-group">
-      <button class="show-start" id="start-button">starta</button>
-      <button class="leaderboard-btn" id="leaderboard-button">leaderBoard</button>
-      <button id="restart-button" class="show-start hidden">Spela igen</button>
-    </div>
-    <div id="question-container" class="hidden">
-        <div id="countdown-display">10:00</div>
-        <div id="question"></div>
-        <div id="answer-one"></div>
-        <div id="answer-two"></div>
-        <div id="answer-three"></div>
-        <div id="answer-four"></div>
-    </div>
-    <!-- Ett dolt leaderboard-element -->
-    <div id="leaderboard-container" class="hidden">
-      <h2>Leaderboard 🏆</h2>
-      <ul id="leaderboard-list"></ul>
-      <button id="close-leaderboard">Stäng</button>
-    </div>
-    
-    <div id="result-container" class="hidden">
-      <h2>Resultat</h2>
-      <div id="score"></div>
-    </div>
+    <canvas id="c"></canvas>
+    <div class="content">
+      <div class="timeout">Tiden är ute! Vill du börja om?</div>
+      <h1>
+        &lt;quizScript&gt;</h1>
+        <input class="user-name" id="username" type="text" placeholder="const namn">
+      <div class="button-group">
+        <button class="show-start" id="start-button">starta</button>
+        <button class="leaderboard-btn" id="leaderboard-button">leaderBoard</button>
+        <button id="restart-button" class="show-start hidden">spelaIgen</button>
+      </div>
+      <div id="question-container" class="hidden">
+          <div id="countdown-display">10:00</div>
+          <div id="question"></div>
+          <div id="answer-one"></div>
+          <div id="answer-two"></div>
+          <div id="answer-three"></div>
+          <div id="answer-four"></div>
+      </div>
+      <!-- Ett dolt leaderboard-element -->
+      <div id="leaderboard-container" class="hidden">
+        <h2>leaderBoard</h2>
+        <ul id="leaderboard-list"></ul>
+        <button id="close-leaderboard">stäng</button>
+      </div>
+      
+      <div id="result-container" class="hidden">
+        <h2>Resultat</h2>
+        <div id="score"></div>
+      </div>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1YS6S9KN6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1YS6S9KN6"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'G-S1YS6S9KN6');
-    </script>
+        gtag('config', 'G-S1YS6S9KN6');
+      </script>
+      <button id="pauseBtn">Pause</button>
+    </div>
   </body>
 </html>
+
+<p></p>

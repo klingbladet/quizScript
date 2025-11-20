@@ -6,13 +6,13 @@ let questions = [];
 let userAnswers = [];
 let userName = "";
 let correctCount = 0;
-let inputElement = document.querySelector('.user-name');
+let inputElement = document.querySelector(".user-name");
 
 function getUserName() {
-
   userName = inputElement.value;
-  console.log('The user name is:', userName);
+  console.log("The user name is:", userName);
 }
+
 const showstart = document.getElementById("start-button");
 showstart.classList.add("show-start");
 
@@ -67,18 +67,20 @@ function startCountdown() {
   countdownInterval = setInterval(updateCountdown, 1000); //1000 behövs för att det faktist ska gå en sekund mellan varje ändring.
   timeoutElement.style.display = "none"; //Tar bort text stringen när timern börjar om.
   inputElement.style.display = "none";
+  const h1div = document.getElementById("h1"); // hide tittle
+  h1div.style.display = "none"; // hide tittle
 }
 
-inputElement.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        // Stop the Enter key from triggering any default browser action (like form submission)
-        event.preventDefault(); 
-        
-        // Bonus: Automatically trigger the start button's actions as well
-        // Since your start button already triggers startCountdown, startshow, and resultatRestartGame
-        // it's good practice to programmatically click it to maintain a single source of truth.
-        document.getElementById('start-button').click();
-    }
+inputElement.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    // Stop the Enter key from triggering any default browser action (like form submission)
+    event.preventDefault();
+
+    // Bonus: Automatically trigger the start button's actions as well
+    // Since your start button already triggers startCountdown, startshow, and resultatRestartGame
+    // it's good practice to programmatically click it to maintain a single source of truth.
+    document.getElementById("start-button").click();
+  }
 });
 
 function resultatRestartGame() {
@@ -138,17 +140,11 @@ function waitForAnswer(answerElements) {
 async function renderHTML() {
   userAnswers = [];
   console.log("Questions loaded:", questions);
-  const answerElements = [
-    document.getElementById("answer-one"),
-    document.getElementById("answer-two"),
-    document.getElementById("answer-three"),
-    document.getElementById("answer-four")
-  ];
+  const answerElements = [document.getElementById("answer-one"), document.getElementById("answer-two"), document.getElementById("answer-three"), document.getElementById("answer-four")];
 
   const questionElement = document.getElementById("question");
 
   for (const q of questions) {
-
     // --- Visa frågan ---
     questionElement.textContent = q.question;
 
@@ -169,7 +165,7 @@ async function renderHTML() {
     const correctElement = answerElements[correctIndex];
     console.log(`User chose index ${chosenIndex}, correct index is ${correctIndex}`);
     // Ta bort hover från alla
-    answerElements.forEach(el => el.classList.remove("answers"));
+    answerElements.forEach((el) => el.classList.remove("answers"));
 
     // --- Visa feedback ---
     if (chosenIndex === correctIndex) {
@@ -225,7 +221,6 @@ async function endQuiz(timeOut = false) {
 }
 
 function startshow() {
-  
   const startshow = document.getElementById("question-container");
   startshow.classList.remove("hidden");
   getUserName();
@@ -237,6 +232,8 @@ function startshow() {
   }
   leaderboardButton.classList.add("hidden"); //Gömmer leaderboard knappen när quizet startas.
   renderHTML();
+
+  document.querySelector(".userDiv").textContent = userName; //skapar div user
 }
 
 async function init() {
@@ -336,3 +333,59 @@ document.getElementById("close-leaderboard").addEventListener("click", () => {
 document.getElementById("leaderboard-button").addEventListener("click", showLeaderboard);
 
 init();
+
+// geting canvas by Boujjou Achraf
+var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+
+//making the canvas full screen
+c.height = window.innerHeight;
+c.width = window.innerWidth;
+
+//chinese characters - taken from the unicode charset
+var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+//converting the string into an array of single characters
+matrix = matrix.split("");
+
+var font_size = 10;
+var columns = c.width / font_size; //number of columns for the rain
+//an array of drops - one per column
+var drops = [];
+//x below is the x coordinate
+//1 = y co-ordinate of the drop(same for every drop initially)
+for (var x = 0; x < columns; x++) drops[x] = 1;
+
+//drawing the characters
+function draw() {
+  if (paused) return;
+  //Black BG for the canvas
+  //translucent BG to show trail
+  ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+  ctx.fillRect(0, 0, c.width, c.height);
+
+  ctx.fillStyle = "#cd7f32"; //green text
+  ctx.font = font_size + "px arial";
+  //looping over drops
+  for (var i = 0; i < drops.length; i++) {
+    //a random chinese character to print
+    var text = matrix[Math.floor(Math.random() * matrix.length)];
+    //x = i*font_size, y = value of drops[i]*font_size
+    ctx.fillText(text, i * font_size, drops[i] * font_size);
+
+    //sending the drop back to the top randomly after it has crossed the screen
+    //adding a randomness to the reset to make the drops scattered on the Y axis
+    if (drops[i] * font_size > c.height && Math.random() > 0.975) drops[i] = 0;
+
+    //incrementing Y coordinate
+    drops[i]++;
+  }
+}
+
+setInterval(draw, 35);
+
+let paused = false;
+
+document.getElementById("pauseBtn").addEventListener("click", function () {
+  paused = !paused;
+  this.textContent = paused ? "Resume" : "Pause";
+});

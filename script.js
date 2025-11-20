@@ -318,9 +318,9 @@ async function showLeaderboard() {
     else li.classList.add("ranked");
 
     let rankDisplay;
-    if (i === 0) rankDisplay = "🥇";
-    else if (i === 1) rankDisplay = "🥈";
-    else if (i === 2) rankDisplay = "🥉";
+    if (i === 0) rankDisplay = "#1";
+    else if (i === 1) rankDisplay = "#2";
+    else if (i === 2) rankDisplay = "#3";
     else rankDisplay = `#${i + 1}`;
 
     li.innerHTML = `

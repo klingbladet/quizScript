@@ -95,6 +95,7 @@ h1 {
   border: solid 1px gray;
   border-radius: 8px;
   padding: 20px;
+  background-color: rgba(15, 15, 15, 0.8);
 }
 
 #question {
@@ -310,6 +311,8 @@ h1 {
 
 #leaderboard-list .thirdRanked {
   background: linear-gradient(90deg, #cd7f32, rgba(205, 127, 50, 0.1)); /* brons */
+  font-family: "Press Start 2P", system-ui;
+  font-size: 10px;
 }
 
 #leaderboard-list .user {

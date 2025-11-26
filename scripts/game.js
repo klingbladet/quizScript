@@ -10,6 +10,7 @@ export let userName = "";
 export let correctCount = 0;
 
 const newuser = document.getElementById("newuser");
+const headerTitle = document.getElementById("header-title");
 
 export function setUserName(value) {
   userName = value;
@@ -145,6 +146,7 @@ export async function endQuiz(timeOut = false) {
   const resultContainer = document.getElementById("result-container");
   const questionContainer = document.getElementById("question-container");
   questionContainer.classList.add("hidden");
+  headerTitle.classList.add("hidden");
   newuser.classList.remove("hidden");
   resultContainer.classList.remove("hidden");
   leaderboardButton.classList.remove("hidden");
@@ -187,6 +189,7 @@ export function restartQuiz() {
 
   const restartBtn = document.getElementById("restart-button");
   restartBtn.classList.add("hidden");
+  headerTitle.classList.remove("hidden");
   newuser.classList.add("hidden");
   leaderboardButton.classList.remove("hidden");
   startButton.style.display = "flex";
